@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News</title>
+<style>
+body { margin: 0; padding: 0; background: #232323; color: #cdcdcd; font-family: "Avenir Next", "Avenir", sans-serif; }
+main { width: calc(100% - 240px); max-width: 680px; margin: 100px auto; padding: 0 20px; }
+p { font-size: 18px; line-height: 28px; }
+* { scroll-behavior: smooth; }
+.article-card { margin-bottom: 40px; border-bottom: 1px solid #444; padding-bottom: 20px; }
+.article-card h2 a { color: tomato; text-decoration: none; }
+.article-card h2 a:hover { text-decoration: underline; }
+#menuToggle { display: block; position: fixed; top: 50px; left: 50px; z-index: 1; user-select: none; }
+#menuToggle a { text-decoration: none; color: #232323; transition: color 0.3s ease; }
+#menuToggle a:hover { color: tomato; }
+#menuToggle input { display: block; width: 40px; height: 32px; position: absolute; top: -7px; left: -5px; cursor: pointer; opacity: 0; z-index: 2; }
+#menuToggle span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #cdcdcd; border-radius: 3px; z-index: 1; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; }
+#menuToggle span:first-child { transform-origin: 0% 0%; }
+#menuToggle span:nth-last-child(2) { transform-origin: 0% 100%; }
+#menuToggle input:checked ~ span { opacity: 1; transform: rotate(45deg) translate(-2px, -1px); background: #232323; }
+#menuToggle input:checked ~ span:nth-last-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); }
+#menuToggle input:checked ~ span:nth-last-child(2) { transform: rotate(-45deg) translate(0, -1px); }
+#menu { position: absolute; max-width: 400px; width: 100vw; max-height: 100vh; margin: -100px 0 0 -50px; padding: 50px; padding-top: 125px; box-sizing: border-box; overflow-y: auto; background: #ededed; list-style-type: none; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); }
+#menu li { padding: 10px 0; font-size: 22px; }
+#menuToggle input:checked ~ ul { transform: none; }
+</style>
+</head>
+<body>
+<nav role="navigation">
+<div id="menuToggle">
+<input type="checkbox" id="menuCheckbox" />
+<span></span>
+<span></span>
+<span></span>
+<ul id="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="games.html">Games</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="more.html" target="_blank">Show me more</a></li>
+</ul>
+</div>
+</nav>
+<main>
+<div class="article-card">
+  <h2><a href="https://ask.metafilter.com/390340/Have-you-got-Their-attention">Have you got Their attention?</a></h2>
+  <p>To what extent do you have Their attention? I am thinking of Them to whatever measure you envision the surveillance of your online activities by entities you'd ...</p>
+</div>
+<div class="article-card">
+  <h2><a href="https://gizmodo.com/blade-2019-2026-is-officially-dead-so-now-what-2000793640">‘Blade’ (2019-2026) Is Officially Dead, So Now What?</a></h2>
+  <p>Pour some blood out for Marvel's daywalker as everything comes up suck for him this year in the most frustrating ways.</p>
+</div>
+<div class="article-card">
+  <h2><a href="https://mynintendonews.com/2026/08/01/digital-foundry-examines-xenoblade-chronicles-2-nintendo-switch-2-edition/">Digital Foundry examines Xenoblade Chronicles 2 Nintendo Switch 2 Edition</a></h2>
+  <p>The gaming tech focused team at Digital Foundry have been examining Xenoblade Chronicles 2 Nintendo Switch 2 Edition and come away relatively impressed by what?...</p>
+</div>
+</main>
+</body>
+</html>
