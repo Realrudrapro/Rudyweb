@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>profile</title>
+</head>
+<body>
+    <nav role="navigation">
+  <div id="menuToggle">
+    
+    <input type="checkbox" id="menuCheckbox" />
+    
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Report</a></li>
+    </ul>
+    
+  </div>
+</nav>
+    <h1 class="main">Profile</h1>
+    <button class="button-6" onclick="logout()">Logout</button>
+    <button class="button-6" onclick="changeUser()">Change User</button>
+    <h1>Nuke options</h1>
+    <button class="button-6custom" onclick="deleteAccount()">delete Account</button>
+    <button class="button-6custom" onclick="changePassword()">change password</button>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>
