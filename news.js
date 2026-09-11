@@ -4,7 +4,7 @@ async function loadNews() {
     try {
         newsContainer.innerHTML = "<p>Loading news...</p>";
 
-        const response = await fetch("/api/news");
+        const response = await fetch("/news-api");
 
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}`);
