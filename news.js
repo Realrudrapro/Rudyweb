@@ -6,11 +6,16 @@ async function loadNews() {
 
         const response = await fetch("/news-api");
 
+        const responseText = await response.text();
+
+        console.log("Status:", response.status);
+        console.log("Response:", responseText);
+
         if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
+            throw new Error(`HTTP ${response.status}: ${responseText}`);
         }
 
-        const data = await response.json();
+        const data = JSON.parse(responseText);
 
         if (!data.data || data.data.length === 0) {
             newsContainer.innerHTML = "<p>No news available.</p>";
@@ -35,7 +40,7 @@ async function loadNews() {
 
     } catch (error) {
         console.error("News error:", error);
-        newsContainer.innerHTML = "<p>Unable to load news right now.</p>";
+        newsContainer.innerHTML = `<p>${escapeHtml(error.message)}</p>`;
     }
 }
 
