@@ -175,3 +175,9 @@ button.signup:hover {
 button {
   text-align: center;
 }
+.iframe-container {
+  display: flex;
+  justify-content: center;    
+  align-items: center;      
+  width: 100%;
+}
