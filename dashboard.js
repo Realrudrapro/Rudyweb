@@ -22,7 +22,7 @@ const auth = getAuth(app);
 window.logout = async function () {
     try {
         await signOut(auth);
-        window.location.href = "login.html";
+        window.location.href = "lmu.html";
     } catch (error) {
         alert(error.message);
     }
@@ -31,7 +31,7 @@ window.logout = async function () {
 window.changeUser = async function () {
     try {
         await signOut(auth);
-        window.location.href = "login.html";
+        window.location.href = "lmu.html";
     } catch (error) {
         alert(error.message);
     }
@@ -55,7 +55,7 @@ window.deleteAccount = async function () {
     } catch (error) {
         if (error.code === "auth/requires-recent-login") {
             alert("Please log in again before deleting your account.");
-            window.location.href = "login.html";
+            window.location.href = "lmu.html";
         } else {
             alert(error.message);
         }
@@ -85,7 +85,7 @@ window.changePassword = async function () {
     } catch (error) {
         if (error.code === "auth/requires-recent-login") {
             alert("Please log in again before changing your password.");
-            window.location.href = "login.html";
+            window.location.href = "lmu.html";
         } else {
             alert(error.message);
         }
