@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="snake.html">Snake Game</a></li>
+            <li><button class="button-6" onclick="logout()">Logout</button></li>
+            <li><button class="button-6custom" onclick="changeUser()">Change User</button></li>
+            <li><button class="button-6" onclick="changePassword()">Change Password</button></li>
+            <li><button class="button-6custom" onclick="deleteAccount()">Delete Account</button></li>
+        </ul>
+    </div>
+    <main class="main">
+        <h1>Dashboard</h1>
+        <p>Welcome to your dashboard!</p>
+    </main>
+    <script type="module" src="../scripts/dashboard.js"></script>
+</body>
+</html>
