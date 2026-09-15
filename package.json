@@ -1,0 +1,24 @@
+{
+  "name": "rudyweb",
+  "version": "1.0.0",
+  "description": "RUDYweb brings the web closer together with games, news, and content from across the internet.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "deploy": "wrangler pages deploy public",
+    "build": "echo 'No build step needed for static site'"
+  },
+  "keywords": [
+    "RUDYweb",
+    "games",
+    "gaming",
+    "news",
+    "internet",
+    "web"
+  ],
+  "author": "RUDYweb Team",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
