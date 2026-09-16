@@ -127,29 +127,9 @@ p {
   text-align: center;
 }
 
-.signup {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  background: #007BFF;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-button.signup:hover {
-  background: #0056b3;
-}
-
-button {
-  text-align: center;
-}
-
-.iframe-container {
+.resnake {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  height: 100vh;
 }
